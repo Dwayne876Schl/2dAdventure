@@ -31,14 +31,10 @@ public class ItemNameDict : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Interact();
+           // Interact();
             AddItem(itemName);
             Destroy(gameObject);
-        }
-        AddItem(itemName);
-        Destroy(gameObject);
+
     }
     public void AddItem(string itemName)
     {
@@ -69,12 +65,12 @@ public class ItemNameDict : MonoBehaviour
     dialogueManager.currentIndex = itemIndex;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+   /* private void OnCollisionEnter2D(Collision2D collision)
  
     {
     if (collision.gameObject.tag =="Power")
     {powerCount++;
     Destroy(collision.gameObject);
     }
-    }
+    }*/
 }

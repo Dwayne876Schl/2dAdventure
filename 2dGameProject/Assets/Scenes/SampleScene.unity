@@ -408,6 +408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: power (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2222014921277328561, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
+      propertyPath: m_TagString
+      value: Power
+      objectReference: {fileID: 0}
     - target: {fileID: 8589831543614500274, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2
@@ -598,6 +602,10 @@ PrefabInstance:
     - target: {fileID: 2222014921277328561, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
       propertyPath: m_Name
       value: power (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2222014921277328561, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
+      propertyPath: m_TagString
+      value: Power
       objectReference: {fileID: 0}
     - target: {fileID: 6555521875535784313, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
       propertyPath: pickUp
@@ -863,6 +871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2246375264404266325, guid: 2108ca526f39d79488fa0044d1f525d5, type: 3}
+      propertyPath: itemName
+      value: key
+      objectReference: {fileID: 0}
     - target: {fileID: 2717287130524378365, guid: 2108ca526f39d79488fa0044d1f525d5, type: 3}
       propertyPath: pickUp
       value: 
@@ -899,6 +911,10 @@ PrefabInstance:
     - target: {fileID: 2222014921277328561, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
       propertyPath: m_Name
       value: power
+      objectReference: {fileID: 0}
+    - target: {fileID: 2222014921277328561, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
+      propertyPath: m_TagString
+      value: Power
       objectReference: {fileID: 0}
     - target: {fileID: 6555521875535784313, guid: c4d1ed5861a178241872f25adcaddb9a, type: 3}
       propertyPath: pickUp
@@ -998,6 +1014,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1983948676677726500, guid: 65596b1a19d2de441b0c2205aaac5b5f, type: 3}
+      propertyPath: speed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983948676677726500, guid: 65596b1a19d2de441b0c2205aaac5b5f, type: 3}
       propertyPath: inventoryDisplay
       value: 
       objectReference: {fileID: 1234972906}
@@ -1008,6 +1028,10 @@ PrefabInstance:
     - target: {fileID: 7712666723141485114, guid: 65596b1a19d2de441b0c2205aaac5b5f, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106699381960047356, guid: 65596b1a19d2de441b0c2205aaac5b5f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

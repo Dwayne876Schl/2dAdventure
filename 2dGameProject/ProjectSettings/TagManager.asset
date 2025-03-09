@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Death
+  - key
+  - Power
   layers:
   - Default
   - TransparentFX

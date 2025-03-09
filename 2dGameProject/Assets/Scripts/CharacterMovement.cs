@@ -51,26 +51,32 @@ public class CharacterMovement : MonoBehaviour
             player.transform.position += Vector3.right * speed;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //when colliding with a game object tagged as "enemy", destroy the player
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(gameObject);
-        }
+    /*  private void OnCollisionEnter2D(Collision2D collision) THIS WILL NOT WORK BECAUSE YOUR OBJECTS ARE TRIGGERS, SO OnCollisionEnter DOESN'T WORK
+      {
+          //when colliding with a game object tagged as "enemy", destroy the player
+          if (collision.gameObject.tag == "Enemy")
+          {
+              Destroy(gameObject);
+          }
 
-        if (collision.gameObject.tag == "Power")
-        {
-            powerCount++;
-            Destroy(collision.gameObject);
-        }
-    }
+         if (collision.gameObject.tag == "Power")
+          {
+              powerCount++;
+              Destroy(collision.gameObject);
+          }
+      }*/
     private void OnTriggerEnter2D(Collider2D other)
     {
         //when entering a trigger destroy the player
         if (other.tag == "Death")
         {
             Destroy(gameObject);
+        }
+
+        if (other.tag == "Power") //THE POWER COUNT SCORE WASN'T GOING UP BEFORE BECAUSE YOU DID NOT HAVE YOUR CODE CHECKING FOR OnTriggerEnter
+        {
+            powerCount++;
+           // Destroy(other.gameObject);
         }
     }
     public void DisplayInventory()
