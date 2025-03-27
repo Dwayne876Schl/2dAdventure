@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HasKey == true && SceneManager.GetActiveScene().buildIndex == 0)
+       /* if (HasKey == true && SceneManager.GetActiveScene().buildIndex == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        }*/
     }
 }
