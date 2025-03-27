@@ -17,10 +17,10 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dialogueDisplay.text = dialogue[currentIndex];
+      /*  dialogueDisplay.text = dialogue[currentIndex];
         if (Input.GetKey(KeyCode.Space))
         {
             currentIndex = 0;
-        }
+        }*/
     }
 }
