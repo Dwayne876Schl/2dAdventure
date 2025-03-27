@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
 
 public class KeyBehaviour : MonoBehaviour
 {
     public string itemName;
     public int itemIndex;
     public CharacterMovement myPlayer;
-    public DialogueManager dialogueManager;
+  //  public DialogueManager dialogueManager;
     // public int powerCount = 0;
 
     private bool hasKey = false;
@@ -18,11 +22,12 @@ public class KeyBehaviour : MonoBehaviour
     void Start()
     {
         myPlayer = FindObjectOfType<CharacterMovement>();
-        dialogueManager = FindObjectOfType<DialogueManager>();
+       // dialogueManager = FindObjectOfType<DialogueManager>();
     }
     // Update is called once per frame
     void Update()
     {
+        myPlayer = FindObjectOfType<CharacterMovement>();
     }
     /*public void CollectPower()
      {
@@ -38,11 +43,15 @@ public class KeyBehaviour : MonoBehaviour
              AddItem(itemName);
              Destroy(gameObject);
          }*/
+        
         if (myPlayer.powerCount >= 3) //THIS DID NOT HAVE AN IF STATEMENT TO CHECK IF POWER COUNT WAS AT 3
         {
+            Debug.Log("enter debug message here");
             AddItem(itemName);
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //Destroy(gameObject);
         }
+        
     }
     public void AddItem(string itemName)
     {
@@ -68,8 +77,8 @@ public class KeyBehaviour : MonoBehaviour
     {
         return hasKey;
     }
-    public void Interact()
+  /*  public void Interact()
     {
         dialogueManager.currentIndex = itemIndex;
-    }
+    }*/
 }
