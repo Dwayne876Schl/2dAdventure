@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c8b23ff10f15048b4a399997c37d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: key
   itemIndex: 0
   myPlayer: {fileID: 0}
-  dialogueManager: {fileID: 0}
