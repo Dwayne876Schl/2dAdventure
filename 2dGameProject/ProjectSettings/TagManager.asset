@@ -8,6 +8,7 @@ TagManager:
   - Death
   - key
   - Power
+  - inventory
   layers:
   - Default
   - TransparentFX
