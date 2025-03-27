@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using TMPro;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.UI;
 public class CharacterMovement : MonoBehaviour
@@ -50,6 +52,8 @@ public class CharacterMovement : MonoBehaviour
         {
             player.transform.position += Vector3.right * speed;
         }
+
+        inventoryDisplay = GameObject.FindGameObjectWithTag("inventory").GetComponent<TextMeshProUGUI>();
     }
     /*  private void OnCollisionEnter2D(Collision2D collision) THIS WILL NOT WORK BECAUSE YOUR OBJECTS ARE TRIGGERS, SO OnCollisionEnter DOESN'T WORK
       {
